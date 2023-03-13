@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         Bundle txtBundle = new Bundle();
         txtBundle.putString("nomeEscolhido", nome);
         txtBundle.putString("genero", genero.name());
+        txtBundle.putString("foto", String.valueOf(new Random().nextInt(3)));
 
         intent.putExtras(txtBundle);
         startActivity(intent);
